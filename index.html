@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Weather Station</title>
+
+<style>
+body {
+font-family: Arial, sans-serif;
+background: #eaf4ff;
+margin: 0;
+padding: 20px;
+text-align: center;
+}
+
+h1 {
+color: #1d3557;
+}
+
+.updated {
+color: #555;
+margin-bottom: 25px;
+}
+
+.weather-grid {
+max-width: 900px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+gap: 15px;
+}
+
+.weather-card {
+background: white;
+padding: 25px;
+border-radius: 15px;
+box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.weather-icon {
+font-size: 40px;
+}
+
+.value {
+font-size: 30px;
+font-weight: bold;
+color: #1d3557;
+}
+
+.label {
+color: #666;
+margin-top: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🌦️ My Weather Station</h1>
+
+<div class="updated">
+Last updated: <span id="updated">Just now</span>
+</div>
+
+<div class="weather-grid">
+
+<div class="weather-card">
+<div class="weather-icon">🌡️</div>
+<div class="value" id="temperature">14.8°C</div>
+<div class="label">Temperature</div>
+</div>
+
+<div class="weather-card">
+<div class="weather-icon">💧</div>
+<div class="value" id="humidity">72%</div>
+<div class="label">Humidity</div>
+</div>
+
+<div class="weather-card">
+<div class="weather-icon">💨</div>
+<div class="value" id="wind">12 km/h</div>
+<div class="label">Wind Speed</div>
+</div>
+
+<div class="weather-card">
+<div class="weather-icon">🌧️</div>
+<div class="value" id="rain">2.4 mm</div>
+<div class="label">Rain Today</div>
+</div>
+
+<div class="weather-card">
+<div class="weather-icon">🧭</div>
+<div class="value" id="direction">SW</div>
+<div class="label">Wind Direction</div>
+</div>
+
+<div class="weather-card">
+<div class="weather-icon">📊</div>
+<div class="value" id="pressure">1018 hPa</div>
+<div class="label">Pressure</div>
+</div>
+
+</div>
+
+</body>
+</html>
